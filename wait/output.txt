@@ -1,0 +1,10 @@
+5.251222
+2.123452
+3.232352
+21.251535
+135315.213000
+90.231250
+
+Total Number of Items: 6
+Sum of the items: 135437.31
+Average of the  items: 22572.88
