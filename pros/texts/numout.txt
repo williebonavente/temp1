@@ -1,0 +1,15 @@
+104 is  multiples of 13 and  odd Number.
+3773 is  multiples of 7 and  even Number.
+13 is  multiples of 13 and  odd Number.
+121 is  multiples of 11 and  even Number.
+77 is  multiples of 7 and  odd Number.
+30751 is  multiples of 7 and  even Number.
+135 is  The value is neither multiples of 7, 11 and 13.
+and  odd Number.
+3002 is  The value is neither multiples of 7, 11 and 13.
+and  even Number.
+15032 is  The value is neither multiples of 7, 11 and 13.
+and  odd Number.
+1393 is  multiples of 7 and  even Number.
+Number of items: 10
+The sum is 54401

@@ -21,30 +21,38 @@ int main(void)
 
     int problem_sel; // problem selected
 
+    char again; // again?
+
     float rate_ml_hr = 0, tubing_dp = 0, dmp = 0;
     float milliliter_per_hour = 0;
     float rate_mg_kg_hr = 0, kg = 0, conc_mg_ml = 0;
     float rate_units_hr = 0, conc_units = 0;
 
-    problem_sel = get_problem();
-    switch (problem_sel)
+    do
     {
-    case 1:
-        get_rate_drop_factor(rate_ml_hr, tubing_dp, &dmp);
-        break;
-    case 2:
-        fig_ml_hr(&milliliter_per_hour);
-        break;
-    case 3:
-        get_kg_rate_conc(&rate_mg_kg_hr, &kg, &conc_mg_ml, &milliliter_per_hour);
-        break;
-    case 4:
-        get_units_conc(rate_units_hr, conc_units, &milliliter_per_hour);
-        break;
-    case 5:
-        printf("\tQUIT!"); 
-        break;
-    }
+        problem_sel = get_problem();
+        switch (problem_sel)
+        {
+        case 1:
+            get_rate_drop_factor(rate_ml_hr, tubing_dp, &dmp);
+            break;
+        case 2:
+            fig_ml_hr(&milliliter_per_hour);
+            break;
+        case 3:
+            get_kg_rate_conc(&rate_mg_kg_hr, &kg, &conc_mg_ml, &milliliter_per_hour);
+            break;
+        case 4:
+            get_units_conc(rate_units_hr, conc_units, &milliliter_per_hour);
+            break;
+        case 5:
+            printf("\tQUIT!");
+            break;
+        }
+        printf("\n\nAgain (Press Y): ");
+        scanf_s(" %c", &again);
+        printf(".\n");
+    } while (again == 'Y' || again == 'y');
 
     return 0;
 }
